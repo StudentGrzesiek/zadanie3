@@ -1,20 +1,8 @@
+install:
+	pip install -r requirements.txt
 
-# Simple Addition App
-This is a simple addition application written in Python.
+test:
+	python3 -m unittest test_app.py
 
-## Files
-- app.py: Main application script.
-- test_app.py: Unit tests for the application.
-- Makefile: Makefile for automation.
-
-## Makefile Targets
-- install: Installs dependencies.
-- test: Runs unit tests.
-- run: Runs the application.
-
-## Usage
-Run the following commands to use the Makefile targets.
-
-    make install
-    make test
-    make run
+run:
+	python3 app.py 3 5
